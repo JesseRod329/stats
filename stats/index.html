@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrestling News Hub - Raw vs SmackDown</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="background-gradient"></div>
+        <div class="particles"></div>
+    </div>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 class="main-title">
+                <span class="wrestling-text">WRESTLING</span>
+                <span class="news-text">NEWS HUB</span>
+            </h1>
+            <p class="subtitle">Raw vs SmackDown - Latest Wrestling News</p>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <!-- Raw News Section (Red) -->
+        <section class="news-section raw-section">
+            <div class="section-header">
+                <div class="brand-logo raw-logo">
+                    <h2>RAW</h2>
+                    <div class="brand-accent"></div>
+                </div>
+                <div class="section-stats">
+                    <span class="news-count" id="raw-count">0</span>
+                    <span class="news-label">Articles</span>
+                </div>
+            </div>
+            
+            <div class="news-container" id="raw-news">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading Raw news...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="vs-badge">VS</div>
+            <div class="divider-line"></div>
+        </div>
+
+        <!-- SmackDown News Section (Blue) -->
+        <section class="news-section smackdown-section">
+            <div class="section-header">
+                <div class="brand-logo smackdown-logo">
+                    <h2>SMACKDOWN</h2>
+                    <div class="brand-accent"></div>
+                </div>
+                <div class="section-stats">
+                    <span class="news-count" id="smackdown-count">0</span>
+                    <span class="news-label">Articles</span>
+                </div>
+            </div>
+            
+            <div class="news-container" id="smackdown-news">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p>Loading SmackDown news...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Powered by wrestling passion • Updated automatically</p>
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
