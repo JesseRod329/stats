@@ -16,7 +16,10 @@ def start_flask_server():
     """Start the Flask backend server"""
     print("🚀 Starting Flask backend server...")
     os.chdir(Path(__file__).parent)
-    subprocess.run([sys.executable, 'app.py'])
+    # Set port to 5001 to avoid AirPlay conflict on macOS
+    env = os.environ.copy()
+    env['PORT'] = '5001'
+    subprocess.run([sys.executable, 'app.py'], env=env)
 
 def start_frontend_server():
     """Start a simple HTTP server for the frontend"""
